@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { TaskListComponent } from './component/task/task-list/task-list.component';
 import { UserFormComponent } from './component/user/user-form/user-form.component';
 import { UserListComponent } from './component/user/user-list/user-list.component';
+import { TaskService } from './service/task/task.service';
 import { UserService } from './service/user/user.service';
 
 @NgModule({
@@ -23,7 +24,7 @@ import { UserService } from './service/user/user.service';
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [UserService, TaskService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
